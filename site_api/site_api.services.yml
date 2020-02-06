@@ -1,0 +1,10 @@
+services:
+   # Give your service a unique name, convention is to prefix service names with
+   # the name of the module that implements them.
+  site_api.route_subscriber:
+    # Tell Drupal which class to use
+    class: 'Drupal\site_api\Routing\SiteApiKeyRouteSubscriber'
+    # This next code is the key, as it tells Drupal to use our class when
+    # building routes.
+    tags:
+      - { name: event_subscriber }

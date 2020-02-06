@@ -1,0 +1,7 @@
+# We want to extend the system.site configuration to save our custom field value siteapikey
+system.site:
+  mapping:
+    # Our field name is 'siteapikey'
+    siteapikey:
+      type: label
+      label: 'Site API Keys'
